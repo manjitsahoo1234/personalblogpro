@@ -1,0 +1,16 @@
+{%extends 'base.html' %}
+{%block title%}Welcome to Pblogs {%endblock%}
+
+{%block content%}
+
+<div class="container-custom">
+  <h3>{{cat.title}}</h3>
+  <p>{{cat.description}}</p>
+
+  <div class="collection">
+      {%for p in posts %}
+      <br><a href="/category/{{cat.url}}"class="collection-itme">{{p.title}}</a>
+      {%endfor%}
+  </div>
+</div>
+{%endblock%}

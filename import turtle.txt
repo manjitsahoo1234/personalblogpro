@@ -1,0 +1,22 @@
+import turtle
+wn = turtle.Screen()        # creates a graphics window
+wn.setup(540,508)           # set window dimension
+
+destination="wes"
+alex = turtle.Turtle()      # create a turtle named alex
+alex.shape("turtle")        # alex looks like a turtle
+alex.color("blue")          # alex has a color
+
+if(destination=="north"):
+  alex.left(90)
+  alex.backward(250)            
+  alex.write("Hello")
+elif(destination=="south"):
+  alex.right(90)
+  alex.forward(250)
+elif(destination=="east"):
+  alex.forward(270)
+elif(destination=="west"):
+  alex.backward(270)
+else:
+  print("invalid destination")

@@ -1,0 +1,2 @@
+user id= Manjit
+password= 1234
